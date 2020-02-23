@@ -24,9 +24,16 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency "jekyll", "~> 3.8.5"
   spec.add_runtime_dependency "jekyll-asciidoc"
+  spec.add_runtime_dependency "rdf", "~> 3.1"
+  spec.add_runtime_dependency "rdf-vocab"
+
+  # RDF readers/writers
+  spec.add_runtime_dependency "json-ld"
+  spec.add_runtime_dependency "rdf-turtle"
 
   spec.add_development_dependency "bundler", "~> 2.1"
   spec.add_development_dependency "pry"
   spec.add_development_dependency "rake", ">= 10"
   spec.add_development_dependency "rspec", "~> 3.9"
+  spec.add_development_dependency "rdf-spec"
 end
