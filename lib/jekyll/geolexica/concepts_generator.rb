@@ -32,8 +32,8 @@ module Jekyll
           preprocess_concept_hash(concept_hash)
           add_page ConceptPage::HTML.new(site, concept_hash)
           add_page ConceptPage::JSON.new(site, concept_hash)
-          add_page ConceptPage::JSONLD.new(site, concept_hash)
-          add_page ConceptPage::Turtle.new(site, concept_hash)
+          # add_page ConceptPage::JSONLD.new(site, concept_hash)
+          # add_page ConceptPage::Turtle.new(site, concept_hash)
         end
       end
 
